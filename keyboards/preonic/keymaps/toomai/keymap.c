@@ -40,28 +40,28 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------|------+------+------+------+------+------|
  * | Shift|   W  |   X  |   C  |   V  |   B  |   N  |   ,  |   ;  |   :  |   =  |  ^   |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * | Ctrl |Super | Alt  | Del |  -  |   Space    |RAISE | RALT  |   ù  |   µ  |  <   |
+ * | Ctrl |Super | Alt  | Del  |  -   |   Space     |RAISE | RALT  |   ù |   µ  |  <   |
  * `-----------------------------------------------------------------------------------'
  */
 [_AZERTY] = LAYOUT_preonic_grid( \
   FR_RPRN,  KC_1,     KC_2,     KC_3,   KC_4,     KC_5,   KC_6,   KC_7,     KC_8,     KC_9,     KC_0,     KC_BSPACE, \
   KC_TAB,   KC_Q,     KC_W,     KC_E,   KC_R,     KC_T,   KC_Y,   KC_U,     KC_I,     KC_O,     KC_P,     KC_RBRC, \
   KC_ESC,   KC_A,     KC_S,     KC_D,   KC_F,     KC_G,   KC_H,   KC_J,     KC_K,     KC_L,     KC_SCLN,  KC_ENT, \
-  KC_LSFT,  KC_Z,     KC_X,     KC_C,   KC_V,     KC_B,   KC_N,   KC_M,     KC_COMM,  KC_DOT,   KC_SLASH,   KC_LBRC, \
-  KC_LCTRL, KC_LGUI,  KC_LALT,  KC_DEL, KC_EQL,  KC_SPC, KC_SPC, MO(_FN),  KC_RALT,  KC_QUOT,  KC_NUHS,  FR_LABK   \
+  KC_LSFT,  KC_Z,     KC_X,     KC_C,   KC_V,     KC_B,   KC_N,   KC_M,     KC_COMM,  KC_DOT,   KC_SLASH, KC_LBRC, \
+  KC_LCTRL, KC_LGUI,  KC_LALT,  KC_DEL, KC_EQL,  KC_SPC, KC_SPC, MO(_FN),   KC_RALT,  KC_QUOT,  KC_NUHS,  FR_LABK   \
 ),
 
-/* Arrow
+/* FN
  * ,-----------------------------------------------------------------------------------.
  * |  F1  |  F2  |  F3  |  F4  |  F5  |  F6  |  F7  |  F8  |  F9  | F10  | F11  | F12  |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * | Tab  |Brigh+|   7  |   8  |   9  |  NO  |Print |  NO  | Pause| Prev | Next | Vol+ |
+ * | Tab  |Brigh+|   7  |   8  |   9  |  NO  |Print | Prev | Pause| Next | NO   | Vol+ |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
  * | Esc  |Brigh-|   4  |   5  |   6  |  NO  |Caplok| Left | Down |  Up  |Right | Vol- |
  * |------+------+------+------+------+------|------+------+------+------+------+------|
  * |Shift |  .   |   1  |   2  |   3  |   0  |  NO  |  NO  |PGdown| Pgup |  NO  | Mute |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * | Ctrl |Super | Alt  | Del | -    |    Space    |Enter |Option|  NO  |  NO  |Escape|
+ * | Ctrl |Super | Alt  | Del |    -  |    Space    |Enter |Option|  NO  |  NO  |Escape|
  * `-----------------------------------------------------------------------------------'
  */
 [_FN] = LAYOUT_preonic_grid( \
@@ -72,7 +72,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   _______,  _______,  _______,  _______,  KC_LEAD,  _______,  _______,  _______,  _______,    XXXXXXX,  XXXXXXX,  KC_ESC    \
 ),
 
-}
+};
 LEADER_EXTERNS();
 
 void matrix_scan_user(void) {
