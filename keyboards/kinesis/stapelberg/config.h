@@ -1,11 +1,7 @@
-#ifndef STAPELBERG_CONFIG_H
-#define STAPELBERG_CONFIG_H
+#pragma once
 
 #include "../config.h"
-
-/* USB Device descriptor parameter */
-#define PRODUCT_ID      0x6060
-#define DEVICE_VER      0x0002
+#include "config_common.h"
 
 /* key matrix size */
 #define MATRIX_ROWS 15
@@ -45,5 +41,3 @@
 */
 
 #define IGNORE_MOD_TAP_INTERRUPT
-
-#endif

@@ -1,5 +1,5 @@
 /*
-Copyright 2020 Lorenz Wellmer
+Copyright 2020 kb-elmo<mail@elmo.space>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -18,13 +18,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #pragma once
 
 #include "config_common.h"
-
-/* USB Device descriptor parameter */
-#define VENDOR_ID 0x6986
-#define PRODUCT_ID 0xC583
-#define DEVICE_VER 0x0102
-#define MANUFACTURER EVE
-#define PRODUCT Kira80
 
 /* key matrix size */
 #define MATRIX_ROWS 7
